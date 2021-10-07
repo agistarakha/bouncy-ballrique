@@ -12,13 +12,14 @@ public class BallController : MonoBehaviour
     void Start()
     {
         ballRb = GetComponent<Rigidbody2D>();
+        ballRb.velocity = new Vector2(5f, 5f);
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        // MoveBall(1f, 1f);
         //fungsi untuk menggerakan bola
-        MoveBall(1f, 1f);
 
     }
 
