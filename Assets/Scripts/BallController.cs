@@ -5,28 +5,44 @@ using UnityEngine;
 public class BallController : MonoBehaviour
 {
     public float movement_speed = 2f;
+    public bool isInputAllowed = false;
 
 
     private Rigidbody2D ballRb;
+    private Vector2 movement;
     // Start is called before the first frame update
     void Start()
     {
         ballRb = GetComponent<Rigidbody2D>();
-        ballRb.velocity = new Vector2(5f, 5f);
+        movement = Vector2.zero;
+        if (!isInputAllowed)
+        {
+            ballRb.velocity = new Vector2(5f, 5f);
+        }
     }
 
     // Update is called once per frame
+    void Update()
+    {
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
+        movement = new Vector2(horizontalInput, verticalInput);
+    }
+
+
     void FixedUpdate()
     {
-        // MoveBall(1f, 1f);
-        //fungsi untuk menggerakan bola
+        if (isInputAllowed)
+        {
+            MoveBall();
+        }
 
     }
 
-    void MoveBall(float x, float y)
+    void MoveBall()
     {
-        Vector2 direction = new Vector2(x, y);
+        Vector2 direction = movement;
         //fungsi untuk menggerakan bola
-        ballRb.MovePosition((Vector2)transform.position + (direction * movement_speed * Time.deltaTime));
+        ballRb.MovePosition((Vector2)transform.position + (direction.normalized * movement_speed * Time.deltaTime));
     }
 }
