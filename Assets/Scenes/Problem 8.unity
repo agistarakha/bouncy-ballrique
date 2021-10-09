@@ -1087,3 +1087,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectiblePrefab: {fileID: 4822746266567196340, guid: 979aeb55ffbc4614092cd712eced17eb,
     type: 3}
+  ball: {fileID: 352038003}
