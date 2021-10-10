@@ -9,6 +9,33 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/Scenes/Problem 10.unity
+    guid: 8245dd534b85af74cb8bf2ef20f7264f
+  - enabled: 1
     path: Assets/Scenes/Problem 1.unity
     guid: 578623f4d1fb95b4f92fcfc776e859bf
+  - enabled: 1
+    path: Assets/Scenes/Problem 2.unity
+    guid: ae392cfaba457734d8987a336cb1c5a8
+  - enabled: 1
+    path: Assets/Scenes/Problem 3.unity
+    guid: ab08464dd3c076d4385afb18c3affde4
+  - enabled: 1
+    path: Assets/Scenes/Problem 4.unity
+    guid: acf523e300977b44c8767242d2fc57f9
+  - enabled: 1
+    path: Assets/Scenes/Problem 5.unity
+    guid: b628470b5549dd6489db67b407a0c557
+  - enabled: 1
+    path: Assets/Scenes/Problem 6.unity
+    guid: 95288ffdbe7ee1d479a63881dfe6c789
+  - enabled: 1
+    path: Assets/Scenes/Problem 7.unity
+    guid: b6f300889385899479c144bd49540c27
+  - enabled: 1
+    path: Assets/Scenes/Problem 8.unity
+    guid: bc5b809a03c2bc641bc6351d42766ef7
+  - enabled: 1
+    path: Assets/Scenes/Problem 9.unity
+    guid: 3de080483d094b24fad18a00303bd48e
   m_configObjects: {}
